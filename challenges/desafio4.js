@@ -9,5 +9,5 @@ db.produtos.updateMany({ nome: "Big Mac" },
 
 db.produtos.find(
   { ultimaModificacao: { $exists: true } },
-  { nome: true, _id: false },
+  { nome: true, _id: 0 },
 );
