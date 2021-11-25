@@ -1,16 +1,14 @@
-db.produtos.updateMany(
-  { $and: [
+db.produtos.updateMany({ 
+  $and: [
     { ingredientes: { $nin: ["ketchup"] } },
     { nome: { $ne: "McChicken" } },
-    ],
-  },
-  { $push: {
+  ],
+},
+{ 
+  $push: {
     ingredientes: "ketchup",
-    },
   },
-  { upsert: true },
-);
+},
+{ upsert: true });
 
-db.produtos.find({},
-  { nome: true, ingredientes: true, _id: false },
- );
+db.produtos.find({}, { nome: true, ingredientes: true, _id: false });
