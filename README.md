@@ -1,31 +1,22 @@
-### Termos e acordos
+# Projeto de MongoDB Commerce!
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
-
----
-
-# Boas vindas ao repositório do projeto de MongoDB Commerce!
-
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
----
+Projeto de **MongoDB** na Trybe. 🚀
 
 # Sumário
 
 - [Habilidades](#habilidades)
 
 - [Entregáveis](#entregáveis)
+
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
   - [Desenvolvimento](#desenvolvimento)
-  - [Data de entrega](#data-de-entrega)
 
 - [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
+
   - [Durante o desenvolvimento](#durante-o-desenvolvimento)
 
 - [Como Desenvolver](#como-desenvolver)
+
   - [Análise Estática](#análise-estática)
   - [Instruções para restaurar o banco de dados commerce](#instruções-para-restaurar-o-banco-de-dados-commerce)
   - [Implementações técnicas](#implementações-técnicas)
@@ -55,42 +46,37 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [21 - Retorne o nome dos sanduíches em que o número de curtidas é maior que o número de sanduíches vendidos](#21---retorne-o-nome-dos-sanduíches-em-que-o-número-de-curtidas-é-maior-que-o-número-de-sanduíches-vendidos)
   - [22 - Retorne o nome e a quantidade de vendas (vendidos) dos sanduíches em que o número de vendas é múltiplo de 5](#22---retorne-o-nome-e-a-quantidade-de-vendas-vendidos-dos-sanduíches-em-que-o-número-de-vendas-é-múltiplo-de-5)
 
-- [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
-- [Revisando um pull request](#revisando-um-pull-request)
-- [Avisos Finais](#avisos-finais)
-
----
-
 # Habilidades
+
 Neste projeto, verificamos se você é capaz de:
 
-  * Utilizar o método `updateOne()` e `updateMany()`
+- Utilizar o método `updateOne()` e `updateMany()`
 
-  * Utilizar os operadores `$set`, `$mul`, `$inc`, `$min`, `$max` e `$currentDate`
+- Utilizar os operadores `$set`, `$mul`, `$inc`, `$min`, `$max` e `$currentDate`
 
-  * Renomear campos e remover campos
+- Renomear campos e remover campos
 
-  * Incorporar dados aos documentos através de arrays
+- Incorporar dados aos documentos através de arrays
 
-  * Utilizar os operadores `$pop`, `$pull` e `$push`
-  
-  * Utilizar o operador `$addToSet`
+- Utilizar os operadores `$pop`, `$pull` e `$push`
 
-  * Utilizar os operadores `$each`, `$slice` e `$sort`
+- Utilizar o operador `$addToSet`
 
-  * Utilizar o operador `$all` para filtrar documentos
+- Utilizar os operadores `$each`, `$slice` e `$sort`
 
-  * Utilizar o operador `$elemMatch` para filtrar documentos
+- Utilizar o operador `$all` para filtrar documentos
 
-  * Utilizar o operador `$size` para filtrar documentos pelo tamanho de arrays
+- Utilizar o operador `$elemMatch` para filtrar documentos
 
-  * Utilizar o operador `$expr` para criar expressões de agregação
+- Utilizar o operador `$size` para filtrar documentos pelo tamanho de arrays
 
-  * Utilizar expressões regulares e o operador `$regex` para buscar documentos
+- Utilizar o operador `$expr` para criar expressões de agregação
 
-  * Utilizar o índice textual e o operador `$text`
+- Utilizar expressões regulares e o operador `$regex` para buscar documentos
 
-  * Utilizar o operador `$mod`
+- Utilizar o índice textual e o operador `$text`
+
+- Utilizar o operador `$mod`
 
 ---
 
@@ -131,87 +117,6 @@ Temos, neste projeto, uma série de desafios com diferentes níveis de complexid
 ### ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
 
 Qualquer dúvida, procure a monitoria. Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://course.betrybe.com/intro/git/) sempre que precisar!
-
----
-
-## Data de Entrega
-
-  - Projeto individual.
-
-  - Será um dia de projeto.
-  
-  - Data de entrega para avaliação final do projeto: `30/11/2021 - 14:00h`.
-
----
-
-# Instruções para entregar seu projeto
-
-### Antes de começar a desenvolver:
-
-1. Clone o repositório
-
-- `git clone git@github.com:tryber/sd-013-a-mongodb-commerce.git`.
-- Entre na pasta do repositório que você acabou de clonar:
-  - `cd sd-013-a-mongodb-commerce`
-
-2. Crie uma branch a partir da branch `master`
-
-- Verifique que você está na branch `master`
-  - Exemplo: `git branch`
-- Se não estiver, mude para a branch `master`
-  - Exemplo: `git checkout master`
-- Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
-  - Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-  - Exemplo: `git checkout -b seunome-mongodb-commerce`
-
-3. Para cada exercício você deve criar um novo arquivo JS **dentro de uma pasta na raiz do seu projeto chamada `challenges`** seguindo a seguinte estrutura:
-
-- desafio1.js, desafio2.js, ..., desafioN.js
-
-4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-
-- Verifique que as mudanças ainda não estão no _stage_
-  - Exemplo: `git status` (deve aparecer o arquivo que você alterou como desafio1.js)
-- Adicione o novo arquivo ao _stage_ do Git
-  - Exemplo:
-    - `git add .` (adicionando arquivo de solução _challenges/desafio1.js_ para desafio 1)
-    - `git status` (deve aparecer listado o arquivo _challenges/desafio1.js_ em verde)
-- Faça o `commit` inicial
-  - Exemplo:
-    - `git commit -m 'iniciando o projeto MongoDB Commerce'` (fazendo o primeiro commit)
-    - `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-5. Adicione a sua branch com o novo `commit` ao repositório remoto
-
-- Usando o exemplo anterior: `git push -u origin joaozinho-sd-013-a-mongodb-commerce`
-
-6. Crie um novo `Pull Request` _(PR)_
-
-- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-013-a-mongodb-commerce/pulls)
-- Clique no botão verde _"New pull request"_
-- Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-- Clique no botão verde _"Create pull request"_
-- Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-- **Não se preocupe em preencher mais nada por enquanto!**
-- Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-013-a-mongodb-commerce/pulls) e confira que o seu _Pull Request_ está criado
----
-
-### Durante o desenvolvimento
-
-- ⚠ **LEMBRE-SE DE CRIAR TODOS OS ARQUIVOS DENTRO DA PASTA `challenges`** ⚠
-
-- Faça `commits` das alterações que você fizer no código regularmente
-
-- Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-- Os comandos que você utilizará com mais frequência são:
-  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-  2. `git add` _(para adicionar arquivos ao stage do Git)_
-  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-  4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
----
 
 # Como Desenvolver
 
@@ -264,22 +169,22 @@ Para executar somente o teste de um desafio, execute o comando abaixo, substitui
 
 ⚠️ Como na avaliação o banco de dados `commerce` é restaurado de um teste para outro, **se atente a fazer uso do banco restaurado na hora de fazer um desafio**. ⚠️
 
-
 ⚠️ Para quem não possui o MongoDB instalado e está utilizando o docker ⚠️
 
 É necessário executar os testes locamente é necessário seguir os seguintes passos:
+
 1. Acesse o terminal na raiz da pasta do projeto;
 2. Crie um container com um volume apontando para a pasta do projeto `docker run -d --name=nomeDoContainer -v "$PWD:/app" -p 27017:27017 mongo`;
 3. Com o container em execução, acesse o terminal do container `docker exec -it nomeDoContainer bash`;
 4. No terminal do container acesse o diretório mapeado no volume (no exemplo acima `/app`);
 5. E por fim execute o script de testes do projeto: `./scripts/evaluate.sh`.
-Se por algum motivo a execução do container for finalizada, basta iniciá-lo novamente com o comando `docker start nomeDoContainer` e seguir a parir do passo 3 em diante.
+   Se por algum motivo a execução do container for finalizada, basta iniciá-lo novamente com o comando `docker start nomeDoContainer` e seguir a parir do passo 3 em diante.
 
 ---
 
 ### Linter
 
-Para garantir a qualidade do código, vamos utilizar neste projeto o linter ESLint. Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível e de fácil manutenção! Para rodar o *linter* localmente no projeto, execute o comando abaixo: 
+Para garantir a qualidade do código, vamos utilizar neste projeto o linter ESLint. Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível e de fácil manutenção! Para rodar o _linter_ localmente no projeto, execute o comando abaixo:
 
 `npm run lint`
 
@@ -455,39 +360,3 @@ Para isso, escreva no arquivo `desafio20.js` duas queries, **nesta ordem**:
 ### 21 - Retorne o `nome` dos sanduíches em que o número de `curtidas` é maior que o número de sanduíches `vendidos`.
 
 ### 22 - Retorne o `nome` e a quantidade de vendas (`vendidos`) dos sanduíches em que o número de vendas é múltiplo de `5`.
-
----
-
-# Depois de terminar o desenvolvimento (OPCIONAL)
-
-Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
-
-- Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
-
-  - No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
-
-  - No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-
-  - No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`.
-
-Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
-
----
-
-# Revisando um pull request
-
-Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
-
-\#VQV 🚀
-
----
-
-# Avisos Finais
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
-
-Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
-
-O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
-
----
